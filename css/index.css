@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-line: #ececec;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* line-height: 24px; */
+}
+
+main, header {
+  padding-left: 135px;
+  padding-right: 135px;
+  
+}
+#carouselId {
+  width: 892px;
+  flex: 0 0 892px;
+}
+
+
+.language {
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 10px 10px 10px ;
+  position: sticky;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+/* here */
+.choose {
+  display: flex;
+  position: absolute;
+  right: 140px;
+}
+
+.hero-text p {
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.hero-text a {
+  color: white;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.choose button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* bcs i cannot put border through the page i use pseado element */
+
+.nav-container::after {
+  position: absolute;
+  content: "";
+  left: -135px;
+  right: -135px;
+  background-color: var(--primary-line);
+  height: 1px;
+  bottom: -16px;
+  font-weight: 0.5;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 3%;
+  color: black;
+}
+
+.links {
+  display: flex;
+  gap: 190px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.links ul li {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.links ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.actions .search-bar input {
+  padding: 7px 45px 7px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #F5F5F5;
+}
+
+.actions .search-bar {
+  position: relative;
+  
+}
+
+.actions .search-bar button {
+outline: none;
+border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.actions .search-bar .searchBtn {
+  top: 50%;
+  position: absolute;
+  border: none;
+  transform: translateY(-50%);
+  right: 12px;
+  height: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.utilityIcon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.actions .utilityIcon button {
+  background: none;
+  border: none;
+}
+
+.hero {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 16px;
+}
+
+
+.selling ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.selling ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  font-size: 16px;
+}
+
+.selling ul .men {
+  display: flex;
+  align-items: center;
+  gap: 81px;
+}
+
+
+/* and here again */
+.selling ul li::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  bottom: 0;
+  right: -20px;
+  width: 1px;
+  background-color: var(--primary-line);
+}
+
+.selling {
+  margin-right: 45px;
+  
+}
+
