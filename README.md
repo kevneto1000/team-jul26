@@ -4,7 +4,7 @@ This project has been organized to keep the files clean, structured, and easy to
 
 ## 📁 Folder Structure
 
-### `tests/`
+### `test/`
 
 All HTML files that were created and used for **testing, experimenting, and learning how to push projects to GitHub** have been moved into this folder.
 
