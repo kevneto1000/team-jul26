@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-line: #ececec;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* line-height: 24px; */
+}
+
+main, header {
+  padding-left: 135px;
+  padding-right: 135px;
+  
+}
+#carouselId {
+  width: 892px;
+  flex: 0 0 892px;
+}
+
+
+.language {
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 10px 10px 10px ;
+  position: sticky;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+/* here */
+.choose {
+  display: flex;
+  position: absolute;
+  right: 140px;
+}
+
+.hero-text p {
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.hero-text a {
+  color: white;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.choose button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* bcs i cannot put border through the page i use pseado element */
+
+.nav-container::after {
+  position: absolute;
+  content: "";
+  left: -135px;
+  right: -135px;
+  background-color: var(--primary-line);
+  height: 1px;
+  bottom: -16px;
+  font-weight: 0.5;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 3%;
+  color: black;
+}
+
+.links {
+  display: flex;
+  gap: 190px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.links ul li {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.links ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.actions .search-bar input {
+  padding: 7px 45px 7px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #F5F5F5;
+}
+
+.actions .search-bar {
+  position: relative;
+  
+}
+
+.actions .search-bar button {
+outline: none;
+border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.actions .search-bar .searchBtn {
+  top: 50%;
+  position: absolute;
+  border: none;
+  transform: translateY(-50%);
+  right: 12px;
+  height: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.utilityIcon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.actions .utilityIcon button {
+  background: none;
+  border: none;
+}
+
+.hero {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 16px;
+  margin-bottom: 135px;
+}
+
+
+.selling ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.selling ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  font-size: 16px;
+}
+
+.selling ul .men {
+  display: flex;
+  align-items: center;
+  gap: 81px;
+}
+
+
+/* and here again */
+.selling ul li::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  bottom: 0;
+  right: -20px;
+  width: 1px;
+  background-color: var(--primary-line);
+}
+
+.selling {
+  margin-right: 45px;
+  
+}
+
+.today .heading .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.today .heading .title .item {
+  width: 20px;
+  height: 40px;
+  background-color: #DB4444;
+  border-radius: 4px;
+}
+
+.today .heading .title h2 {
+  font-size: 16px;
+  color: #DB4444;
+  line-height: 20%;
+}
+
+.actions {
+  display: flex;
+  gap: 87px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.actions .flash-sales {
+ font-family: 'Inter', sans-serif;
+ font-weight: 600;
+ line-height: 48px;
+ letter-spacing: 4%;
+ font-size: 36px;
+}
+
+.actions .time {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.actions .time .days {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.actions .time .days .day {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .days .day-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+
+.actions .time .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.actions .time .hours .hour {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .hours .hour-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+.actions .time .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.actions .time .hours .hour {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .hours .hour-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.actions .time .minutes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.actions .time .minutes .minute {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .minutes .minute-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+.actions .time .seconds {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.actions .time .seconds .second {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .seconds .second-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+.actions .time .hours::after, .actions .time .minutes::after, .actions .time .days::after {
+  content: ":";
+  color: #DB4444;
+  position: absolute;
+  right: -18.5px;
+  height: 16px;
+  top: 50%;
+  font-size: 28px;
+  font-weight: bolder;
+  transform: translateY(-50%);
+}

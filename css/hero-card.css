@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.hero-card {
+  display: flex;
+  background-color: #000;
+  width: 892px;
+  justify-content: space-between;
+  height: 344px;
+  position: relative;
+  padding-left: 64px;
+}
+
+.hero-card .text .heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 68px;  
+  z-index: 2;
+}
+
+.hero-card .text .heading img {
+  width: 40px;
+  height: 49px;
+}
+
+.hero-card .text .heading h1 {
+  color: #fff;
+}
+
+.hero-card .text {
+  display: flex;
+  flex-direction: column;
+}
+.hero-card .desc p {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  width: 294px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.hero-card .img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-card .shopnow button img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1)
+  
+}
+
+.hero-card button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.shopnow .shop-text {
+  position: relative;
+  width: fit-content;
+  
+}
+
+.shopnow button .shop-text:hover {
+  transform: translateY(1);
+}
+
+
+.shopnow .shop-text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+}
+
+/* .carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: red;
+} */
+#carouselId {
+  width: 892px;
+  height: 344px;
+  position: relative;
+}
+
+.carousel-inner {
+  height: 344px;
+}
+
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: 11px;
+  z-index: 5;
+}
+.carousel .carousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0 4px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+.carousel .carousel-indicators li.active {
+  opacity: 1;
+  background-color: #DB4444;
+  border: 2px solid #fff;
+  width: 14px;
+  height: 14px;
+}
+
+#carouselId .carousel-item {
+  height: 344px !important;
+}
