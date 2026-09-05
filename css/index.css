@@ -173,6 +173,7 @@ border: none;
   display: flex;
   margin-top: 40px;
   margin-left: 16px;
+  margin-bottom: 135px;
 }
 
 
@@ -214,3 +215,162 @@ border: none;
   
 }
 
+.today .heading .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.today .heading .title .item {
+  width: 20px;
+  height: 40px;
+  background-color: #DB4444;
+  border-radius: 4px;
+}
+
+.today .heading .title h2 {
+  font-size: 16px;
+  color: #DB4444;
+  line-height: 20%;
+}
+
+.actions {
+  display: flex;
+  gap: 87px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.actions .flash-sales {
+ font-family: 'Inter', sans-serif;
+ font-weight: 600;
+ line-height: 48px;
+ letter-spacing: 4%;
+ font-size: 36px;
+}
+
+.actions .time {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.actions .time .days {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.actions .time .days .day {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .days .day-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+
+.actions .time .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.actions .time .hours .hour {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .hours .hour-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+.actions .time .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.actions .time .hours .hour {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .hours .hour-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.actions .time .minutes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.actions .time .minutes .minute {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .minutes .minute-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+.actions .time .seconds {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.actions .time .seconds .second {
+  line-height: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
+.actions .time .seconds .second-num {
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+
+.actions .time .hours::after, .actions .time .minutes::after, .actions .time .days::after {
+  content: ":";
+  color: #DB4444;
+  position: absolute;
+  right: -18.5px;
+  height: 16px;
+  top: 50%;
+  font-size: 28px;
+  font-weight: bolder;
+  transform: translateY(-50%);
+}
